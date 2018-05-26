@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap3 Form</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="container">
+
+<div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+		<form role="form">
+			<h2>Please Fill Details </h2>
+			<hr class="colorgraph">
+			<div class="row">
+                 
+				<div class="col-xs-6 col-sm-6 col-md-6">
+                    <div class="form-group">
+                        <label>Name</label>
+                   <input type ="text"  id="last_name" class="form-control input-md" tabindex="3" placeholder="enter your name" required >       
+                             	</div>
+				</div>
+                <label>Emp Id</label>
+        				<div class="col-xs-6 col-sm-6 col-md-6">
+					<div class="form-group">
+                        <input type ="text"  id="last_name" class="form-control input-md" tabindex="3" placeholder="employid" required >
+                            
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+
+                <label>Email</label>
+               
+             <input type="email" class="form-control" id="display_name" class="form-control input-lg" tabindex="3" required  >
+                  
+			</div>
+        <label> phone number</label>
+			<div class="form-group">
+				<input type="text" name="date" id="email" class="form-control input-md" placeholder="enter your phonenumber" tabindex="4" required>
+			</div>
+
+
+<label> Name of seminar hall</label>
+			<div class="form-group">
+				<input type="text" name="date" id="email" class="form-control input-md" placeholder="enter name" tabindex="4">
+							</div>
+							<div class="form-group">
+
+                <label>Room No:</label>
+               
+             <div class="form-group">
+
+                <input type="text" class="form-control" id="display_name" class="form-control input-lg" tabindex="3"  >
+                  
+			</div>
+                  
+			</div>
+
+
+			<hr class="colorgraph">
+			<div class="row">
+				<div class="col-xs-6 col-md-6"><input type="submit" value="Appply" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="t_and_c_m" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h4 class="modal-title" id="myModalLabel">Terms & Conditions</h4>
+			</div>
+			
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">I Agree</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  <?php
+ $servername = "localhost";
+$username = "root";
+$password = "";
+$conn = mysqli_connect($servername, $username, $password);
+echo "sucess"
+  ?>
+
+</body>
+
+</html>
